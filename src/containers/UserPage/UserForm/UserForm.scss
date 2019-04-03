@@ -1,0 +1,84 @@
+.UserFormContent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: fixed;
+    top: 56px;
+    bottom: 50px;
+    width: 100%;
+    background: #fffbf7;
+    
+    .UserForm {
+        position: absolute;
+        width: 100%;
+        bottom: 106px;
+        top: 0;
+        overflow-y: auto;
+        text-align: center;
+
+        .UserFormHeader {
+            display: inline-block;
+            color: #28a6d3;
+           width: 100%;
+            font-size: 48px;
+            padding: 20px 0 10px 0;
+        }
+
+        .UserFormImage {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .UserFormInput {
+            display: flex;
+            width: 75%;
+            margin: auto;
+            .FormContent {
+                width: 100%; 
+                font-size: 20px;
+                .FormSelect {
+                    text-align: left;
+                    margin-top: 30px;
+                    select {
+                        font-size: 20px;
+                        border: 1px solid #28a6d3;
+                        background: white;
+                        border-radius: 6px;
+                        margin: 8px 0;
+                    }
+                }
+
+                .FormInput {
+                 
+                    display:flex;
+                    margin-top: 30px;
+                    justify-content: space-between;
+                    .Input {
+                        text-align: left;
+                    }
+                }
+                .Invalid {
+                    color: red;
+                    text-align: left;
+                }
+                @media (max-width: 500px) {   
+                    .FormButton {
+                        width:100%
+                    }
+                }
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .UserFormInput {
+                width: 60%;
+            }
+        }
+    }
+}
+
+.Test {
+    width: 3px;
+}

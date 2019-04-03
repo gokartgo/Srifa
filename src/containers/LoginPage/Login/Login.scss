@@ -1,0 +1,29 @@
+.Login {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.Logo {
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+.Footer {
+    height: 50px;
+    width: 100%;
+    background-color: #5e514d;
+    position: absolute;
+    bottom: 0;
+}
+
+.Invalid {
+    display: block;
+    color: red;
+}
+
+.Valid {
+    display: none;
+}

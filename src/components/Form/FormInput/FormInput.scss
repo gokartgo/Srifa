@@ -1,0 +1,11 @@
+.InputContent {
+    text-align: left;
+    .Input {
+        border-radius: 6px;
+    }
+    @media (max-width: 1000px) {
+        .Input {
+            width: 95%;
+        }
+    }
+}

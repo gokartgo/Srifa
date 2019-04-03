@@ -1,0 +1,33 @@
+.Footer {
+    height: 50px;
+    width: 100%;
+    background-color: #5e514d;
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    align-items: center;
+    justify-content: space-between;
+    .Word {
+        color: white;
+        font-size: 11px;
+        margin-left: 42px;
+    }
+    .IconContent {
+        height: 50%;
+        margin-right: 42px;
+        svg {
+            height: 100%;
+            margin-left: 26px;
+        }
+    }
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        /* IE10+ CSS styles go here */
+        .IconContent{
+            display: flex;
+            min-width: 116px;
+            svg {
+                width: 32px;
+            }
+        }
+    } 
+}
