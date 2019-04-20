@@ -8,7 +8,7 @@ module.exports = {
     entry: ['@babel/polyfill', './src/index.js'],
     output: {
         filename: 'bundle.js',
-        path: resolve(__dirname, 'dist'),
+        path: resolve(__dirname, 'build'),
         publicPath: '',
     },
     module: {
@@ -78,12 +78,12 @@ module.exports = {
         ],
     },
     devServer: {
-        historyApiFallback: true,
+        contentBase: "./build",
     },
     plugins: [
         new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin({
-            template: 'src/index.html',
+            template: resolve('./src/index.html'),
         }),
         new ExtractTextPlugin('styles.css', {
             allChunks: true
