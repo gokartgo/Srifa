@@ -16,7 +16,7 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start": "webpack --mode production",
+    "start": "node index.js",
     "build": "webpack --mode production",
     "test": "react-scripts test",
     "dev": "webpack-dev-server --mode development --open",
