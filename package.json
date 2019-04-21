@@ -17,13 +17,12 @@
   },
   "scripts": {
     "start": "node index.js",
-    "build": "webpack --mode production",
-    "test": "react-scripts test",
+    "build": "react-scripts build",
+    "test": "webpack --mode production && npm start",
     "dev": "webpack-dev-server --mode development --open",
     "eject": "react-scripts eject",
     "production": "webpack --mode production",
-    "dev-webpack": "webpack --mode development",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run production"
   },
   "eslintConfig": {
     "extends": "react-app"
